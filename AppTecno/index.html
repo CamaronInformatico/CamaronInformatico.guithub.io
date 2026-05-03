@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponiendo Problemáticas Ambientales</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Exponiendo Problemáticas Ambientales</title>
+    <!-- Esta línea conecta ambos archivos -->
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+
+</head>
+<body>
+    <div id="loader-wrapper">
+    <div class="axolotl-container">
+        <!-- Imagen del Ajolote -->       
+    <img src="img/ajolote1.jpg" class="axolotl" alt="Ajolote nadando">
+    </div>
+    <p class="loading-text">Cargando...</p>
+</div>
+    <video autoplay muted loop id="bg-video">
+    <source src="img/FondoPT.mp4" type="video/mp4">
+    Tu navegador no soporta videos de fondo.
+</video>
+<!-- Capa opcional para oscurecer el video y que se lea mejor el texto -->
+<div class="video-overlay"></div>
+
+    <button class="btn-theme" onclick="toggleTheme()">Cambiar Modo</button>
+
+    <header>
+        <h1>Exponiendo Problemáticas Ambientales</h1>
+        <p>Un espacio de conciencia para la comunidad estudiantil</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- PROBLEMÁTICAS -->
+        <main class="problematicas-izq">
+            
+            <section>
+                <h2>Desastres Ambientales En latinoamerica </h2>
+                
+                <!-- 1. Derrame Petrolero -->
+                <div class="catastrofe-item">
+                    <h3>1. Derrame de Petróleo en el Golfo de Mexico (Deepwater Horizon)</h3>
+                    <img src="img/Derrame.webp" alt="Derrame petrolero" class="marco-verde">
+                    <p>Impacto devastador en los ecosistemas marinos y la biodiversidad costera.</p>
+                    <a href="https://www.adn40.mx/mexico/2026-03-25/derrame-petroleo-veracruz-tabasco-crisis-ambiental-crece-golfo-mexico/" 
+                    target="_blank">Leer investigación completa en ADN40</a>
+                </div>
+
+                <!-- 2. Deforestación Amazónica -->
+                <div class="catastrofe-item">
+                    <h3>2. Los científicos no dan crédito a lo que está pasando en el Amazonas en Brasil: los datos más bajos registrados en la historia</h3>
+                    <img src="img/Deforestacion amazonas.avif" alt="Deforestación" class="marco-verde">
+                    <p>La pérdida de los "pulmones del mundo" debido a la tala ilegal.</p>
+                    <a href="https://www.msn.com/es-es/noticias/otras/los-cient%C3%ADficos-no-dan-cr%C3%A9dito-a-lo-que-est%C3%A1-pasando-en-el-amazonas-en-brasil-los-datos-m%C3%A1s-bajos-registrados-en-la-historia/ar-AA1ZYRTB?ocid=BingNewsVerp"
+                    target="_blank">Leee la informacion completa en MSN</a>
+                </div>
+
+                <!-- 3. Contaminación por Plásticos -->
+                <div class="catastrofe-item">
+                    <h3>3. Gran Mancha de Basura del Pacífico</h3>
+                    <img src="img/islabasura.jpg" alt="Plásticos" class="marco-verde">
+                    <p>Millones de toneladas de microplásticos afectando la cadena alimenticia.</p>
+                    <a href="https://www.nationalgeographic.com.es/medio-ambiente/contaminacion-marina-causas-y-metodos-de-lucha_25633" 
+                    target="_blank">Informe National Geographic</a>
+                </div>
+
+                <!-- 4. Deshielo de los Polos -->
+                <div class="catastrofe-item">
+                    <h3>4. Cambio Climático en los Polos: Consecuencias Impactantes del Deshielo Polar en Nuestro Planeta</h3>
+                    <img src="img/Deshielo.webp" alt="Deshielo" class="marco-verde">
+                    <p>Aumento del nivel del mar y pérdida de hábitat para especies polares.</p>
+                    <a href="https://institutodelagua.es/cambio-climatico/cambio-climatico-en-los-poloscambio-climatico/#google_vignette"
+                    target="_blank">Reportajes de Instituto del Agua</a>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Catástrofes Históricas Mundiales</h2>
+                
+                <!-- Chernóbil -->
+                <div class="catastrofe-item">
+                    <h3>Chernóbil (Desastre Nuclear)</h3>
+                    <img src="img/Chernobyl.jpg" alt="Chernobyl" class="marco-mixto">
+                    <p>El accidente nuclear más grave de la historia que dejó una zona de exclusión por siglos.</p>
+                    <a href="https://historia.nationalgeographic.com.es/actualidad/chernobil-sigue-latiendo-asi-se-vivio-mayor-tragedia-nuclear-historia_25942"
+                    target="_blank">Reportaje National Geographic</a>
+                </div>
+
+                <!-- Guerras Medio Oriente -->
+                <div class="catastrofe-item">
+                    <h3>Guerra en Oriente Medio: un conflicto que se desborda por todas partes</h3>
+                    <img src="img/guerrasmd.jpg" alt="Guerras" class="marco-mixto">
+                    <p>Conflictos bélicos que han causado destrucción de suelos y contaminación química masiva.</p>
+                    <a href="https://news.un.org/es/story/2026/03/1541209"
+                    target="_blank">Reportaje  Oficial de la ONU</a>
+                </div>
+
+                <!-- Bhopal -->
+                <div class="catastrofe-item">
+                    <h3>La catástrofe industrial más grande de la historia</h3>
+                    <img src="img/Bhopal.jpg" alt="Bhopal" class="marco-mixto">
+                    <p>Fuga de gas tóxico en la India que afectó a miles de personas de forma irreversible.</p>
+                    <a href="https://www.gob.mx/cenapred/articulos/la-catastrofe-indurtrial-mas-grande-de-la-historia"
+                    target="_blank">Reportaje Gobierno de México</a>
+                </div>
+
+                <!-- Mar de Aral -->
+                <div class="catastrofe-item">
+                    <h3>El Mar de Aral: así se produjo el mayor desastre ecológico del siglo XX</h3>
+                    <img src="img/mararal.jpg" alt="Mar de Aral" class="marco-mixto">
+                    <p>Uno de los mayores desastres ecológicos modernos: un mar convertido en desierto de sal.</p>
+                    <a href="https://los40.com/2025/10/20/el-mar-de-aral-asi-se-produjo-el-mayor-desastre-ecologico-del-siglo-xx/"
+                    target="_blank">Reportaje Los 40</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- ESPACIO PARA VÍDEOS -->
+        <aside class="sidebar-der">
+            <h2>Videos de los Estudiantes</h2>
+
+            <!--Tres graves crisis de México-->
+            <div style="border: 2px dashed #aaa; padding: 50px; text-align: center;">
+                <h3>Tres graves crisis de México</h3>
+                <img src="img/Tres graves crisis de mexico.png" alt="Video Educativo" class="marco-mixto">    
+                <p></p>
+                <a href="https://youtu.be/M127f3zGi7c?si=UZZgB1sWnXGmZvP9" target="_blank">Ver Tres Graves Crisis de México</a>
+            </div>
+
+            <!--Quejas de construccion del pozo de agua colonia jardines-->
+                <div style="border: 2px dashed #aaa; padding: 50px; text-align: center; margin-top: 20px;">
+                    <h3>Quejas por construcción de pozo de agua en Colonia Jardines</h3>    
+                    <img src="img/Quejascoljardin.png" alt="Video Educativo" class="marco-mixto">
+                    <p></p>
+                    <a href="https://youtu.be/--vhw-QlnWM?si=b9263bKMCmhy2dLt" target="_blank">Ver Quejas por construcción de pozo de agua en Colonia Jardines</a>  
+                </div>
+
+            <!---Clip defensores Ambientales-->
+                <div style="border: 2px dashed #aaa; padding: 50px; text-align: center; margin-top: 20px;">
+                    <h3>Defensores Ambientales en México</h3>    
+                    <img src="img/Defambientales.png" alt="Video Educativo" class="marco-mixto">
+                    <p></p>
+                    <a href="https://youtu.be/uhbHKcg2GYU?si=GtswKHt00BgapIwW" target="_blank">Ver Defensores Ambientales en México</a>  
+                </div>  
+
+            <!--Acentamiento de Comunidades en zonas Ambientales-->
+                <div style="border: 2px dashed #aaa; padding: 50px; text-align: center; margin-top: 20px;">
+                    <h3>Asentamiento de Comunidades en Zonas Ambientales</h3>    
+                    <img src="img/AcentamientozonaA.png" alt="Video Educativo" class="marco-mixto">
+                    <p></p>
+                    <a href="https://www.youtube.com/shorts/MSBFfCFAsys" target="_blank">Ver Asentamiento de Comunidades en Zonas Ambientales</a>  
+                </div>
+
+            <!--Problemas Ambientales-->
+                <div style="border: 2px dashed #aaa; padding: 50px; text-align: center; margin-top: 20px;">
+                    <h3>Problemas Ambientales en México</h3>    
+                    <img src="img/Problemasamb.png" alt="Video Educativo" class="marco-mixto">
+                    <p></p>
+                    <a href="https://www.youtube.com/shorts/zgaQ0m44ZHg" target="_blank">Ver Problemas Ambientales en México</a>  
+                </div>
+
+            <!--Planeacion de infrestructura para inundaciones-->
+                <div style="border: 2px dashed #aaa; padding: 50px; text-align: center; margin-top: 20px;">
+                    <h3>Planeación de Infraestructura para Inundaciones</h3>    
+                    <img src="img/PlaneacionI.png" alt="Video Educativo" class="marco-mixto">
+                    <p></p>
+                    <a href="https://www.youtube.com/shorts/iTj5dinN2ZY" target="_blank">Ver Planeación de Infraestructura para Inundaciones</a>  
+                </div>
+
+            <!--Macrolibramiento mexiquense Planta de amoniaco Proyecto Saguaro-->
+                <div style="border: 2px dashed #aaa; padding: 50px; text-align: center; margin-top: 20px;">
+                    <h3>Macrolibramiento mexiquense Planta de amoniaco Proyecto Saguaro</h3>    
+                    <img src="img/Psaguaro.png" alt="Video Educativo" class="marco-mixto">
+                    <p></p>
+                    <a href="https://www.youtube.com/shorts/MSBFfCFAsys" target="_blank">Ver Macrolibramiento mexiquense Planta de amoniaco Proyecto Saguaro</a>  
+                </div>
+
+            <!--Inundaciones en chalco y valle de chalco-->
+                <div style="border: 2px dashed #aaa; padding: 50px; text-align: center; margin-top: 20px;">
+                    <h3>Inundaciones en chalco y valle de chalco</h3>    
+                    <img src="img/InundacionesCyCV.png" alt="Video Educativo" class="marco-mixto">
+                    <p></p>
+                    <a href="https://www.youtube.com/shorts/_nMDefGitsk" target="_blank">Ver Inundaciones en chalco y valle de chalco</a>  
+                </div>
+
+            <!--Informacion de contaminacion en lagunas Xico-->
+                <div style="border: 2px dashed #aaa; padding: 50px; text-align: center; margin-top: 20px;">
+                    <h3>Información de contaminación en lagunas Xico</h3>    
+                    <img src="img/Inundacionesxico.png" alt="Video Educativo" class="marco-mixto">
+                    <p></p>
+                    <a href="https://www.youtube.com/shorts/k8SccSuzA64" target="_blank">Ver Información de contaminación en lagunas Xico</a>  
+                </div>
+
+            <!--Incendios forestales ne mexico-->
+                <div style="border: 2px dashed #aaa; padding: 50px; text-align: center; margin-top: 20px;">
+                    <h3>Incendios forestales en México</h3>    
+                    <img src="img/incendiosF.png" alt="Video Educativo" class="marco-mixto">
+                    <p></p>
+                    <a href="https://www.youtube.com/shorts/MSBFfCFAsys" target="_blank">Ver Incendios forestales en México</a>  
+                </div>
+
+            <!--Escases de agua en Chalco y Valle de Chalco-->
+                <div style="border: 2px dashed #aaa; padding: 50px; text-align: center; margin-top: 20px;">
+                    <h3>Escases de agua en Chalco y Valle de Chalco</h3>    
+                    <img src="img/Escasesdeagua.png" alt="Video Educativo" class="marco-mixto">
+                    <p></p>
+                    <a href="https://www.youtube.com/shorts/kYPErtvkPkI" target="_blank">Ver Escases de agua en Chalco y Valle de Chalco</a>  
+                </div>
+
+            <!--Cuidado del agua-->
+                <div style="border: 2px dashed #aaa; padding: 50px; text-align: center; margin-top: 20px;">
+                    <h3>Cuidado del agua</h3>    
+                    <img src="img/CuidadoAgua.png" alt="Video Educativo" class="marco-mixto">
+                    <p></p>
+                    <a href="https://www.youtube.com/shorts/MSBFfCFAsys" target="_blank">Ver Cuidado del agua</a>  
+                </div>
+        </aside>
+
+    </div>
+
+<footer>
+    <h2>Contáctanos y Síguenos</h2>
+    <div class="social-placeholder">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61588907980805" target="_blank">
+            <img src="img/LogoFB.jpg" alt="Facebook" width="35">
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/problematicas_ambientalestuvch/" target="_blank">
+            <img src="img/Logoig.jpg" alt="Instagram" width="35">
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@problematicas_ambientalestuvch" target="_blank">
+            <img src="img/Logotk.jpg" alt="TikTok" width="35">
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@IngenieroEmirJu%C3%A1rez" target="_blank">
+            <img src="img/Logoyt.jpg" alt="YouTube" width="35">
+        </a>
+    </div>
+    <p>&copy; 2026 Proyecto de Conciencia Ambiental Estudiantil</p>
+</footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                body.removeAttribute('data-theme');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+            }
+        }
+    </script>
+
+    <script>
+    // Esta función se ejecuta cuando TODO el contenido (video, imágenes) ha cargado
+    window.addEventListener('load', function() {
+        const loader = document.getElementById('loader-wrapper');
+        
+        // Le damos un pequeño tiempo para que se vea la animación
+        setTimeout(() => {
+            loader.style.opacity = '0';
+            loader.style.transition = 'opacity 0.5s ease';
+            
+            // Después de la transición, lo eliminamos del flujo
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 500);
+        }, 2000); // 2 segundos de cortesía para ver al ajolote
+    });
+</script>
+</body>
+</html>
