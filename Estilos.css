@@ -28,8 +28,8 @@ body::-webkit-scrollbar {
 header {
     text-align: center;
     padding: 2rem;
-    background-color: #2e7d32;
-    color: white;
+    background-color: #ffffff;
+    color: #1a1a1a;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
@@ -51,7 +51,7 @@ header {
     gap: 30px;
     padding: 20px;
     padding-right: 40px;
-    border-right: 3px solid #2e7d32;
+    border-right: 3px solid #ffffff;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none;
@@ -71,7 +71,7 @@ header {
 
 /* Marcos solicitados */
 .marco-verde {
-    border: 11px solid #006341;
+    border: 11px solid #ffffff;
     width: 80%;
     height: auto;
     display: block;
@@ -80,7 +80,7 @@ header {
 
 .marco-mixto {
     border: 11px solid;
-    border-color: #18ee2a #12eb8d #18ee2a #12eb8d;
+    border-color: #ffffff #ffffff #ffffff #ffffff;
     width: 80%;
     height: auto;
     display: block;
@@ -124,7 +124,7 @@ footer {
     margin-top: 50px;
     padding: 40px;
     text-align: center;
-    border-top: 2px solid #2e7d32;
+    border-top: 2px solid #ffffff;
     grid-column: 1 / -1;
 }
 
@@ -139,7 +139,7 @@ img {
 }
 
 a {
-    color: #2e7d32;
+    color: #ffffff;
     font-weight: bold;
     text-decoration: none;
 }
@@ -204,7 +204,7 @@ a:hover {
 .loading-text {
     margin-top: 100px;
     font-family: 'Courier New', Courier, monospace;
-    color: #18ee2a;
+    color: #ffffff;
     font-weight: bold;
     animation: pulseText 1.5s infinite;
 }
@@ -250,7 +250,7 @@ a:hover {
 
     .problematicas-izq {
         border-right: none;
-        border-bottom: 3px solid #2e7d32;
+        border-bottom: 3px solid #ffffff;
         padding-right: 20px;
         overflow-y: visible;
     }
@@ -291,7 +291,7 @@ a:hover {
 
     .problematicas-izq {
         border-right: none;
-        border-bottom: 3px solid #2e7d32;
+        border-bottom: 3px solid #ffffff;
         padding-right: 10px;
         overflow-y: visible;
     }
