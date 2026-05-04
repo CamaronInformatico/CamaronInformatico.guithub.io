@@ -42,7 +42,7 @@ header {
     gap: 40px;
     padding: 20px;
     box-sizing: border-box;
-    align-items: start;
+    min-height: auto;
 }
 
 /* Columna izquierda - Información e imágenes */
@@ -52,6 +52,7 @@ header {
     gap: 30px;
     padding-right: 20px;
     border-right: 3px solid #2e7d32;
+    overflow: visible;
 }
 
 .catastrofe-item {
@@ -87,8 +88,6 @@ header {
     gap: 20px;
     border-left: none;
     padding-left: 0;
-    position: sticky;
-    top: 20px;
 }
 
 .video-container {
