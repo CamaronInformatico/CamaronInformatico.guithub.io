@@ -68,19 +68,6 @@ header {
     padding-left: 20px;
 }
 
-.btn-theme {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 20px;
-    border: none;
-    background: #fbc02d;
-    font-weight: bold;
-    z-index: 100;
-}
-
 footer {
     margin-top: 50px;
     padding: 40px;
@@ -220,13 +207,6 @@ a:hover {
         width: 90%;
     }
 
-    .btn-theme {
-        top: 10px;
-        right: 10px;
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
-
     .axolotl-container {
         width: 300px;
         height: 300px;
@@ -253,13 +233,6 @@ a:hover {
     .marco-mixto {
         width: 95%;
         border-width: 8px;
-    }
-
-    .btn-theme {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-        top: 5px;
-        right: 5px;
     }
 
     footer {
