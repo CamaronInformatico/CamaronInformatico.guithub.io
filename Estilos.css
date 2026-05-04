@@ -1,103 +1,115 @@
 :root {
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --card-bg: #f4f4f4;
-        }
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f4f4f4;
+}
 
-        [data-theme="dark"] {
-            --bg-color: #1a1a1a;
-            --text-color: #ffffff;
-            --card-bg: #2d2d2d;
-        }
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --card-bg: #2d2d2d;
+}
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            transition: all 0.3s ease;
-        }
+body {
+    background-color: transparent !important;
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    transition: all 0.3s ease;
+}
 
-        header {
-            text-align: center;
-            padding: 2rem;
-            background-color: #2e7d32;
-            color: white;
-        }
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2e7d32;
+    color: white;
+}
 
-        .container {
-            display: grid;
-            grid-template-columns: 4fr 1fr;
-            gap: 20px;
-            padding: 20px;
-        }
+.container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
 
-        /* Estilos de las secciones */
-        .problematicas-izq {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
+/* Estilos de las secciones */
+.problematicas-izq {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
-        .catastrofe-item {
-            background-color: var(--card-bg);
-            padding: 15px;
-            border-radius: 8px;
-        }
+.catastrofe-item {
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    opacity: 0.95;
+}
 
-        /* Marcos solicitados */
-        .marco-verde {
-            border: 11px solid #006341; /* Verde Bandera */
-            width: 80%;
-            height: auto;
-            display: block;
-            margin: 10px auto;
-        }
+/* Marcos solicitados */
+.marco-verde {
+    border: 11px solid #006341;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
 
-        .marco-mixto {
-            border: 11px solid;
-            border-color: #18ee2a #12eb8d #18ee2a #12eb8d; /* Rojo y Azul */
-            width: 80%;
-            height: auto;
-            display: block;
-            margin: 10px auto;
-        }
+.marco-mixto {
+    border: 11px solid;
+    border-color: #18ee2a #12eb8d #18ee2a #12eb8d;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
 
-        .sidebar-der {
-            border-left: 2px dashed #ccc;
-            padding-left: 20px;
-        }
+.sidebar-der {
+    border-left: 2px dashed #ccc;
+    padding-left: 20px;
+}
 
-        .btn-theme {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 20px;
-            border: none;
-            background: #fbc02d;
-            font-weight: bold;
-        }
+.btn-theme {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background: #fbc02d;
+    font-weight: bold;
+}
 
-        footer {
-            margin-top: 50px;
-            padding: 40px;
-            text-align: center;
-            border-top: 2px solid #2e7d32;
-        }
+footer {
+    margin-top: 50px;
+    padding: 40px;
+    text-align: center;
+    border-top: 2px solid #2e7d32;
+}
 
-        .social-placeholder {
-            font-style: italic;
-            color: #888;
-            margin-top: 20px;
-        }
+.social-placeholder {
+    font-style: italic;
+    color: #888;
+    margin-top: 20px;
+}
 
-        img { max-width: 100%; }
-        a { color: #2e7d32; font-weight: bold; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+img {
+    max-width: 100%;
+}
 
-        /* Estilo para el video de fondo */
+a {
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el video de fondo */
 #bg-video {
     position: fixed;
     right: 0;
@@ -106,9 +118,9 @@
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -100; /* Lo manda al fondo de todo */
+    z-index: -100;
     background-size: cover;
-    object-fit: cover; /* Evita que el video se deforme */
+    object-fit: cover;
 }
 
 /* Capa oscura para que el texto resalte sobre el video */
@@ -118,58 +130,43 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Ajusta el 0.4 para más o menos oscuridad */
+    background: rgba(0, 0, 0, 0.4);
     z-index: -99;
 }
 
-/* Ajuste necesario para que el fondo de tu body sea transparente 
-   y permita ver el video */
-body {
-    background-color: transparent !important;
-}
-
-/* Opcional: Hacer que las tarjetas sean un poco más legibles */
-.catastrofe-item {
-    background-color: var(--card-bg);
-    backdrop-filter: blur(5px); /* Efecto de vidrio esmerilado */
-    opacity: 0.95;
-}
-
+/* Loader y Axolote */
 #loader-wrapper {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* Un fondo rosado muy suave como el ajolote */
-    background-color: #ffebee; 
+    background-color: #ffebee;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    opacity: 1;
 }
 
 .axolotl-container {
     position: relative;
-    width: 500px; /* Ajusta según el tamaño de tu imagen */
+    width: 500px;
     height: 500px;
 }
 
 .axolotl {
     width: 100%;
     height: auto;
-    
-    /* Aplicamos la animación de flotación */
     animation: float 3s ease-in-out infinite;
 }
 
 .loading-text {
     margin-top: 100px;
-    font-family: 'Courier New', Courier, monospace; /* Estilo retro/tierno */
+    font-family: 'Courier New', Courier, monospace;
     color: #ff8a80;
     font-weight: bold;
-    /* Animación opcional para el texto */
     animation: pulseText 1.5s infinite;
 }
 
@@ -181,8 +178,7 @@ body {
         transform: translateY(0px) rotate(0deg);
     }
     50% {
-        /* Sube 15px y rota ligeramente */
-        transform: translateY(-15px) rotate(2deg); 
+        transform: translateY(-15px) rotate(2deg);
     }
     100% {
         transform: translateY(0px) rotate(0deg);
@@ -191,21 +187,10 @@ body {
 
 /* Animación 2: Pulso suave para el texto */
 @keyframes pulseText {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-}
-
-#loader-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff; /* O el color que elegiste */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Crucial para estar por encima del video */
-    opacity: 1;
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
 }
