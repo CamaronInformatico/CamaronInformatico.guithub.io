@@ -27,8 +27,6 @@
 <!-- Capa opcional para oscurecer el video y que se lea mejor el texto -->
 <div class="video-overlay"></div>
 
-    <button class="btn-theme" onclick="toggleTheme()">Cambiar Modo</button>
-
     <header>
         <h1>Exponiendo Problemáticas Ambientales</h1>
         <p>Un espacio de conciencia para la comunidad estudiantil</p>
@@ -250,18 +248,6 @@
     </div>
     <p>&copy; 2026 Proyecto de Conciencia Ambiental Estudiantil</p>
 </footer>
-
-    <script>
-        function toggleTheme() {
-            const body = document.body;
-            const currentTheme = body.getAttribute('data-theme');
-            if (currentTheme === 'dark') {
-                body.removeAttribute('data-theme');
-            } else {
-                body.setAttribute('data-theme', 'dark');
-            }
-        }
-    </script>
 
     <script>
     // Esta función se ejecuta cuando TODO el contenido (video, imágenes) ha cargado
