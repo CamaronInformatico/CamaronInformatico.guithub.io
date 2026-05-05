@@ -71,7 +71,7 @@ header {
 
 /* Marcos solicitados */
 .marco-verde {
-    border: 11px solid #ffffff;
+    border: 11px solid #32CD32;
     width: 80%;
     height: auto;
     display: block;
@@ -80,7 +80,7 @@ header {
 
 .marco-mixto {
     border: 11px solid;
-    border-color: #ffffff #ffffff #ffffff #ffffff;
+    border-color: #32CD32 #32CD32 #32CD32 #32CD32;
     width: 80%;
     height: auto;
     display: block;
